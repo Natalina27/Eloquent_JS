@@ -33,6 +33,7 @@ const FizzBuzz = () => {
 FizzBuzz();
 
 //Chessboard
+console.log('========================');
 
 const chessboard = (size) => {
 

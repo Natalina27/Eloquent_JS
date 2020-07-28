@@ -1,4 +1,9 @@
+//Part1
+//1. Values, types and operators
+//2. Program structure
+
 //Looping a Triangle
+// Write a loop that makes seven calls to output triangle
 const loopingTriangle = () => {
     let res = '';
     for (let i = 0; i < 7; i++) {
@@ -14,7 +19,9 @@ loopingTriangle();
 console.log('========================');
 
 //FizzBuzz
-
+// Fizz - for number divisible by 3
+// Buzz - for number divisible by 5
+//FizzBuzz - for number divisible by 3 and 5
 const FizzBuzz = () => {
     for (let i = 1; i <= 100; i++) {
         if (i % 15 === 0) {
@@ -32,9 +39,10 @@ const FizzBuzz = () => {
 
 FizzBuzz();
 
-//Chessboard
-console.log('========================');
 
+console.log('========================');
+//Chessboard
+// String that rappresents 8x8 grid using \n
 const chessboard = (size) => {
 
     let board = "";

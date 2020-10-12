@@ -1,4 +1,4 @@
-console.log('======== Chessboard ========= ');
+console.log('========2.3 Chessboard ========= ');
 
 
 //Chessboard

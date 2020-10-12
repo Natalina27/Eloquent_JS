@@ -1,8 +1,7 @@
 //Part1
 //3.Functions
 
-//Minimum
-// Function takes 2 arguments and return min
+
 
 console.log('========================');
 

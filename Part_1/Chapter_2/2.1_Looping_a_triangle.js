@@ -1,4 +1,4 @@
-console.log('======Looping a Triangle========');
+console.log('====== 2.1 Looping a Triangle========');
 
 //Part1
 //1. Values, types and operators

@@ -1,4 +1,4 @@
-console.log('========FizzBuzz==========');
+console.log('======== 2.2 FizzBuzz==========');
 
 
 //FizzBuzz

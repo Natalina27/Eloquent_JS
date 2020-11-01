@@ -5,5 +5,13 @@ console.log('======4.1 ========');
 
 //2. Write a sum function that takes an array of numbers and return the sum of these numbers
 
+const range = (start, end, step) => {
+  const arr = [];
+  for(let i = start; i <= end; i += step){
+    arr.push(i);
+  }
+  return arr;
+}
 
-
+console.log(range(0,10, 1));
+console.log(range(0,10, 5));

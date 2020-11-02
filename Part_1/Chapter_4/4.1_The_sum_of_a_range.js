@@ -15,3 +15,13 @@ const range = (start, end, step) => {
 
 console.log(range(0,10, 1));
 console.log(range(0,10, 5));
+
+const arrayRange1 = range(0,10, 1);
+const arrayRange2 = range(0,10, 5);
+
+const sum =  arr => {
+  return arr.reduce((a, b) => a + b, 0);
+}
+
+console.log(sum(arrayRange1));
+console.log(sum(arrayRange2));

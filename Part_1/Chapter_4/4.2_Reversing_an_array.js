@@ -13,6 +13,6 @@ const reverseArray = (arr) => {
   return newArray;
 }
 
-console.log(reverseArray([1, 3, 7]));
+console.log(reverseArray([1, 3, 7])); //[7, 3, 1]
 
 //2. reverseArrayInPlace

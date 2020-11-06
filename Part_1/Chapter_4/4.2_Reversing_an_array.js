@@ -5,5 +5,14 @@ console.log('======4.2 ========');
 //The second modifies an array given as argument by reversing its elements
 
 //1.reverseArray
+const reverseArray = (arr) => {
+  let newArray = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    newArray.push(arr[i]);
+  }
+  return newArray;
+}
+
+console.log(reverseArray([1, 3, 7]));
 
 //2. reverseArrayInPlace

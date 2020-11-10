@@ -1,6 +1,6 @@
 console.log('======4.3 ========');
 /*
-Write a fiunction arrayToList that builds up a list structure
+Write a function arrayToList that builds up a list structure
 like the one shown when given [1, 2, 3] as argument.
 ```
   let list = {
@@ -21,3 +21,18 @@ and nth that takes a list and a number and returns the element at the given posi
 in the list or undefined when there is no such element.
 If you haven't already , also write a recursive version  of nth.
  */
+
+const array = [1, 2, 3];
+
+//1. arrayToList
+function arrayToList(arr){
+  let list = null;
+  for(let i = arr.length - 1; i >= 0; i--){
+   list ={value: arr[i], rest: list}
+  }
+
+  return list;
+}
+console.log(arrayToList(array));
+
+

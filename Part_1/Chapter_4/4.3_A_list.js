@@ -25,7 +25,7 @@ If you haven't already , also write a recursive version  of nth.
 const array = [1, 2, 3];
 
 //1. arrayToList
-function arrayToList(arr){
+const arrayToList = (arr) => {
   let list = null;
   for(let i = arr.length - 1; i >= 0; i--){
    list ={value: arr[i], rest: list}
@@ -33,6 +33,16 @@ function arrayToList(arr){
 
   return list;
 }
-console.log(arrayToList(array));
+const list = arrayToList(array);
+console.log(list);
 
+//2.listArray
+const listArray = (list) =>{
+  let array = [];
+  for (let node = list; node; node = node.rest) {
+    array.push(node.value);
+  }
+  return array;
+};
+console.log(listArray(list));
 

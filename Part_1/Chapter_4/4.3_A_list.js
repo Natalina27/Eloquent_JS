@@ -35,14 +35,28 @@ const arrayToList = (arr) => {
 }
 const list = arrayToList(array);
 console.log(list);
+/*
+list
+
+{
+value: 1.
+rest : {
+  value: 2,
+      rest : {
+    value : 3,
+        rest: null
+  }
+}
+};
+ */
 
 //2.listArray
 const listArray = (list) =>{
   let array = [];
-  for (let node = list; node; node = node.rest) {
-    array.push(node.value);
+  for (let i = list; i; i = i.rest) {
+    array.push(i.value);
   }
   return array;
 };
-console.log(listArray(list));
+console.log(listArray(list)); //[1, 2, 3]
 

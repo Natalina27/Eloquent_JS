@@ -60,9 +60,13 @@ const listArray = (list) =>{
 };
 console.log(listArray(list)); //[1, 2, 3]
 
-//3. prepend
-function prepend(value, list) {
-  return {value, rest: list};
+//3. prepend -takes an element and a list
+// and creates a new list that add the element to the front on the input list.
+const  prepend = (value, list) =>  {
+  return {
+    value,
+    rest: list
+  };
 }
 
 console.log(prepend(10, prepend(20, null)));

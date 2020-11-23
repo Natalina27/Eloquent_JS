@@ -69,3 +69,12 @@ console.log(prepend(10, prepend(20, null)));
 /*
 {value: 10, rest: {value: 20, rest: null}}
  */
+
+//4. nth
+function nth(list, n) {
+  if (!list) return undefined;
+  else if (n === 0) return list.value;
+  else return nth(list.rest, n - 1);
+}
+console.log(nth(arrayToList([10, 20, 30]), 1));
+// → 20

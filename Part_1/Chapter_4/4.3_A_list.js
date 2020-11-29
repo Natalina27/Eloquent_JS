@@ -51,14 +51,14 @@ rest : {
  */
 
 //2.listArray
-const listArray = (list) =>{
+const listToArray = (list) =>{
   let array = [];
   for (let i = list; i; i = i.rest) {
     array.push(i.value);
   }
   return array;
 };
-console.log(listArray(list)); //[1, 2, 3]
+console.log(listToArray(list)); //[1, 2, 3]
 
 //3. prepend -takes an element and a list
 // and creates a new list that add the element to the front on the input list.
@@ -84,4 +84,13 @@ const nth = (list, n) => {
   }
 }
 console.log(nth(arrayToList([10, 20, 30]), 1));
+// → 20
+
+console.log('arrayToList([10, 20])', arrayToList([10, 20]));
+// → {value: 10, rest: {value: 20, rest: null}}
+console.log('listToArray(arrayToList([10, 20, 30]))', listToArray(arrayToList([10, 20, 30])));
+// → [10, 20, 30]
+console.log('prepend(10, prepend(20, null))', prepend(10, prepend(20, null)));
+// → {value: 10, rest: {value: 20, rest: null}}
+console.log('nth(arrayToList([10, 20, 30]), 1)', nth(arrayToList([10, 20, 30]), 1));
 // → 20
